@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--FontAwesome icons-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>FITEVENT</title>
+
+    <!--Style-->
+    <style>
+        header{
+           background: url(py.jpg);
+           background-position: center;
+           background-size: cover;
+           min-height: 1000px;
+           background-color: black;
+        }
+        .section{
+            padding-bottom: 4vw;
+            padding-top: 4vw;
+
+        }
+        p {
+      display: block;
+      margin-block-start: 2em;
+      margin-block-end: 4em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    unicode-bidi: isolate;
+        }
+        .tabs .indicator{
+         background-color: #000;
+        }
+      .tabs .tab a:hover, .tabs .tab a:focus.active {
+      background-color: transparent;
+      }
+        @media screen and (max-width:650px) {
+            header{
+                min-height: 500px;
+            }
+        }
+    </style>
+    
+</head>
+  
+<body>
+
+  <!--header-->
+  <header>
+ <nav class="nav-wrapper transparent">
+    <div class="container">
+        <a href="#" class="brand-logo">FIT</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile"><i class="material-icons">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Vlog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="sidenav orange darken-white center" id="mobile">
+            <h3 class="white-text center">FIT</h3>
+            <li><a href="#" class="waves-effect waves-light white-text">Home</a></li>
+            <li><a href="#" class="waves-effect waves-light white-text">about</a></li>
+            <li><a href="#" class="waves-effect waves-light white-text">event</a></li>
+            <li><a href="#" class="waves-effect waves-light white-text">Vlog</a></li>
+            <li><a href="#" class="waves-effect waves-light white-text">content</a></li>
+        </ul>
+    </div>
+ </nav>
+  </header>
+  <!--img with description-->
+  <section class="container section">
+    <div class="row">
+        <div class="col sl2 l6">
+            <img src="1.jpg" class="responsive-img materialboxed">     
+        </div>
+        <div class="col sl2 l6">
+            <h2 class="black-text">Yoga</h2>
+            <P>Yoga is a practice that offers numerous benefits for both the body and mind. Through its various poses, stretches, and breathing techniques, yoga helps improve flexibility, strength, and balance. It also promotes joint health, reduces stress, and enhances mental well-being by alleviating symptoms of anxiety and depression. Additionally, yoga aids in improving sleep quality, boosting heart health, and increasing self-confidence. It tones muscles, enhances endurance, and supports weight management. Ultimately, practicing yoga fosters mindfulness, focus, and overall physical and mental well-being.</P>    </div>
+<div class="row">
+        <div class="col sl2 l6 push-l7">
+            <img src="2.jpg" class="responsive-img materialboxed">     
+        </div>
+        <div class="col sl2 l6 pull-l5">
+            <h2 class="black-text"> Zumba</h2>
+            <P>Zumba is a dynamic group exercise that combines dance and fitness elements, offering a multitude of benefits for both the body and mind. This high-energy workout provides an effective cardiovascular workout, helping to improve endurance and cardiovascular health. With its lively dance routines and bodyweight exercises, Zumba also contributes to muscle toning and strengthening, particularly in the legs, core, and arms. The rhythmic movements and stretches in Zumba enhance flexibility and coordination while providing stress relief and releasing endorphins. Moreover, participating in Zumba classes fosters social interaction, creates a sense of community, and can be adapted to accommodate different fitness levels and abilities. Overall, Zumba offers a fun and engaging way to stay active, improve fitness, and boost overall well-being. </P> </div>
+</div>
+    <div class="row">
+        <div class="col sl2 l6">
+            <img src="3.jpg" class="responsive-img materialboxed">     
+        </div>
+        <div class="col sl2 l6">
+            <h2 class="black-text">Jogging</h2>
+            <P>Jogging is a versatile and beneficial form of exercise that offers a multitude of advantages for both the body and mind. By engaging in regular jogging sessions, you can improve your cardiovascular fitness, manage weight, strengthen bones and muscles, enhance endurance and stamina, and experience a positive impact on your mental well-being. Jogging is a convenient and accessible activity that can be tailored to individual preferences, whether indoors or outdoors. It provides an opportunity to connect with nature, release endorphins, reduce stress, and promote better sleep. Remember to start gradually, listen to your body, and enjoy the physical and mental benefits that jogging brings to your life.</p>     </div>
+    </div>
+        </section>
+
+
+<!--Compiled and minified Jquery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+       $('.materialboxed').materialbox();
+       $('.parallax').parallax();
+       $('.tabs').tabs();
+             })
+    </script>
+
+</body> 
+</html>
